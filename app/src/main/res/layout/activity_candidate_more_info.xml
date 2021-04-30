@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    tools:context=".CandidateMoreInfo">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+
+            >
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/contact_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contact_No."
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="DOB"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textColor="#03A9F4"
+                />
+            <Spinner
+                android:id="@+id/educational_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Separate by comma for multiple strings"
+                android:textColor="#03A9F4" />
+
+            <EditText
+                android:id="@+id/non_tech_skills"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Technical andNon-Technical Skills"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/achievements"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Achievements"
+                android:inputType="textPersonName" />
+
+
+
+            <TextView
+                android:id="@+id/info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Field"
+                android:textColor="#03A9F4" />
+            <Spinner
+                android:id="@+id/field_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/info5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Pic:"
+                android:textColor="#03A9F4" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+
+                >
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="69dp"
+                    android:layout_height="62dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/pick_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#03A9F4"
+                    android:text="Pick"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/file_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Path"
+                android:textColor="#03A9F4"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/choose_file"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#03A9F4"
+                android:layout_marginTop="20dp"
+                android:text="Choose File"
+                android:textColor="#fff" />
+
+
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="#03A9F4"
+                android:text="Submit"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

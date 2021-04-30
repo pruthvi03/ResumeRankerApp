@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34FFFFFF"
+    tools:context=".RecActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+    >
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <EditText
+        android:id="@+id/positionid_post"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Position"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/field_post"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Field"
+        android:inputType="textPersonName"/>
+
+
+    <EditText
+        android:id="@+id/experience_post"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Experience Required(In years)"
+        android:inputType="number" />
+
+
+
+    <EditText
+        android:id="@+id/skills_post"
+        android:layout_width="346dp"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Skills Required"
+        android:inputType="textMultiLine"/>
+
+        <TextView
+            android:id="@+id/skillstext_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter skills you want saparated by comma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#03A9F4" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/salary_post"
+        android:layout_width="346dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Salary"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/vacancy_post"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="No. of Vacancy"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/date_post"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last date for application"
+        android:inputType="date" />
+
+        <EditText
+            android:id="@+id/skills_post2"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Additional Info..."
+            android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button_post"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_margin="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        android:text="Post"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

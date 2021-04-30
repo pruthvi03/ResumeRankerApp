@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_add_info"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/nav_marks"
+            android:icon="@drawable/ic_result"
+            android:title="Result Of Last Test"/>
+        <item
+            android:id="@+id/nav_rank_detail"
+            android:icon="@drawable/ic_rank"
+            android:title="Final result"/>
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_log_out"
+            android:title="Log Out"/>
+
+    </group>
+
+
+</menu>

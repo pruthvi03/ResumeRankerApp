@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#34FFFFFF"
+    tools:context=".CompanyMoreInfo">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/company_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="Name"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/category"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Category" />
+
+            <EditText
+                android:id="@+id/link"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Website_Link" />
+            <TextView
+                android:id="@+id/title_profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textPersonName"
+                android:text="Profile Pic :"
+                android:textColor="#03A9F4" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="112dp"
+                    android:layout_height="79dp"
+                    android:src="@drawable/ic_image_blue_bg" />
+
+                <Button
+                    android:id="@+id/button_image_profile"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/white"
+                    android:layout_width="149dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Choose" />
+
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/submit_btn"
+                android:layout_marginTop="50dp"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/white"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
